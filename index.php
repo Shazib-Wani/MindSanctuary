@@ -23,7 +23,7 @@
                     <div class="signup-form">
                         <h1> Welcome to Mind Sanctuary</h1>
                         <h2 class="form-title">Register</h2>
-                        <form method="POST" class="register-form" id="register-form">
+                        <form action = "index.php" method="POST" class="register-form" id="register-form">
                             <div class="form-group">
                                 <label for="name"><i class="zmdi zmdi-account material-icons-name"></i></label>
                                 <input type="text" name="name" id="name" placeholder="Your Name"/>
@@ -60,9 +60,47 @@
         
 
     </div>
+    <?php
+if($_SERVER['REQUEST_METHOD']=='POST'){
+$name = $_POST['name'];
+$email = $_POST['email'];
+$upassword = $_POST['pass'];
+//$repassword = $_POST['re-pass'];
 
+
+$servername = "localhost";
+$username = "root";
+$password = "";
+$database = "users";
+$conn = mysqli_connect($servername, $username,$password, $database);
+
+// Check connection
+if (!$conn) {
+    die("Connection failed: " . mysqli_connect_error());
+}
+else{
+   $sql = "INSERT INTO `userss` (`name`, `email`, `password`) VALUES ('$name', '$email', '$upassword')";
+   $result = mysqli_query($conn,$sql);
+   if($result){
+    echo '
+     <link rel="stylesheet" href="q.css">
+<div class="alert">
+     <span class="closebtn" onclick="this.parentElement.style.display="none";">&times;</span>
+     Registered Successfully.
+   </div>     
+
+   ';
+   }
+   else{
+    echo "was not inserted beacuse of".mysqli_error($conn);
+   }
+}
+}
+?>
     <!-- JS -->
     <script src="vendor/jquery/jquery.min.js"></script>
     <script src="js/main.js"></script>
 </body>
 </html>
+
+

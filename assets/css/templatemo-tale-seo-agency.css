@@ -904,16 +904,16 @@ Services Style
 */
 
 .services {
-  position: relative;
+  position: absolute;
   overflow: hidden;
 }
 
-.services .section-heading h2 {
+.services .section-heading h2 {text-align: center;
   padding-right: 30px;
 }
 
 .services::before {
-  content: url(../images/services-left.jpg);
+  
   top: 120px;
   left: 0;
   position: absolute;

@@ -906,36 +906,46 @@ Services Style
 .services {
   position: relative;
   overflow: hidden;
+  background-color: #f7f7f7; /* add a background color for contrast */
 }
 
 .services .section-heading h2 {
   text-align: center;
 }
 
-.services .col-lg-6.offset-lg-6 {
+.services .container {
+  max-width: 1200px; /* adjust this value as needed */
+  margin: 0 auto;
+}
+
+.services .row {
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.services .col-lg-3 {
+  flex: 0 0 calc(25% - 30px); /* 4 boxes in each line with 30px margin between them */
+  max-width: calc(25% - 30px);
+  margin: 15px;
 }
 
 .services .service-item {
   border: 1px solid #f3d7ff;
-  border-radius: 23px;
+  border-radius: 100px;
   padding: 30px;
   background-color: #fff;
-  margin-bottom: 30px;
+  margin-bottom: 100px;
   transition: all .4s;
   width: 100%;
-  max-width: 800px;
+  max-width: 400px; /* adjust this value as needed */
+  overflow: hidden;
+  text-align: center;
 }
 
 .services .service-item h4 {
-  font-size: 20px;
-  color: #2a2a2a;
-  margin-top: 20px;
-  line-height: 30px;
-  transition: all .4s;
-  text-align: center;
+  max-height: 40px; /* adjust this value as needed */
+  overflow: hidden;
 }
 
 .services .service-item:hover {
@@ -947,25 +957,12 @@ Services Style
   color: #5b03e4;
 }
 
-.services::before {
-  top: 120px;
-  left: 0;
-  position: absolute;
-  width: 100%;
-  height: 714px;
-  z-index: -1;
-}
-
 .services::after {
   content: url(../images/contact-left.jpg);
   bottom: -150px;
   right: 0;
   -webkit-transform: scaleX(-1);
-  transform: scaleX(-1);
-  position: absolute;
-  width: 103px;
-  height: 464px;
-  z-index: -1;
+  transform: scaleX
 }
 
 

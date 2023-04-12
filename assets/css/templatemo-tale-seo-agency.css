@@ -902,8 +902,14 @@ Banner Style
 Services Style
 --------------------------------------------- 
 */
+.services .service-item.active {
+  background-color: rgba(198, 61, 255, 0.7); /* change the alpha value (0-1) to adjust the opacity */
+  color: #fff; /* change to any color you like */
+  font-weight: bold;
+}
 
-.services {
+
+  .services {
   position: relative;
   overflow: hidden;
   background-color: #f7f7f7; /* add a background color for contrast */
@@ -929,6 +935,7 @@ Services Style
   max-width: calc(25% - 30px);
   margin: 15px;
 }
+
 
 .services .service-item {
   border: 1px solid #f3d7ff;
@@ -957,13 +964,6 @@ Services Style
   color: #5b03e4;
 }
 
-.services::after {
-  content: url(../images/contact-left.jpg);
-  bottom: -150px;
-  right: 0;
-  -webkit-transform: scaleX(-1);
-  transform: scaleX
-}
 
 
 /* 

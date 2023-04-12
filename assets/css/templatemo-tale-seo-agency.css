@@ -1196,6 +1196,7 @@ Contact Style
   padding: 60px;
   border-radius: 23px 23px 0px 0px;
   border: 1px solid #f3d7ff;
+  
 }
 
 #contact-form .section-heading {
@@ -1791,7 +1792,11 @@ Most Asked Style
   border-radius: 23px;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.10);
   padding: 60px;
-  margin-left: 45px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 80%;
   background-color: #fff;
 }
 
@@ -1801,7 +1806,7 @@ Most Asked Style
 
 #free-quote input {
   width: 100%;
-  height: 46px;
+  height: 100px;
   border-radius: 23px;
   background-color: #f9ebff;
   border: none;
@@ -1821,7 +1826,7 @@ Most Asked Style
   border: none;
   height: 46px;
   background-color: #5b03e4;
-  width: 100%;
+  width: 10%;
   border-radius: 23px;
   color: #fff;
   transition: all .4s;
@@ -1998,5 +2003,11 @@ body {
     padding: 60px;
     border-radius: 23px;
   }
+}
+
+.comment-header {
+  font-size: 15px;
+  line-height: 30px;
+  color: #000000;
 }
 

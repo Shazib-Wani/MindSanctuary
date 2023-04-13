@@ -1,4 +1,4 @@
-document.addEventListener(
+/*document.addEventListener(
     "click",
     function(event) {
       var target = event.target;
@@ -44,4 +44,6 @@ document.addEventListener(
   // Add event listener to the submit button
   var commentForm = document.getElementById("comment-form");
   commentForm.addEventListener("submit", handleCommentSubmit);
+  */
+
   

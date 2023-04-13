@@ -964,6 +964,27 @@ Services Style
   color: #5b03e4;
 }
 
+.submit-button {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.maybe-later {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.maybe-later a {
+  color: #8B4513;
+  text-decoration: underline;
+}
+
+.maybe-later a:hover {
+  color: #A0522D;
+}
+
+
+
 
 
 /* 

@@ -104,9 +104,9 @@ let renderComment = (comment) => {
 			 ${comment.content}
 			</div>
 			<div>	
-				${comment.upvotes} <a href="#" role="button" id="upvotes-${id}">Upvotes</a>
-				${comment.downvotes} <a href="#" role="button" id="downvotes-${id}">Downvote</a>
-				<a href="#" role="button" id="reply-${id}">Reply</a>
+				${comment.upvotes} <a role="button" id="upvotes-${id}">Upvotes</a>
+				${comment.downvotes} <a role="button" id="downvotes-${id}">Downvote</a>
+				<a  role="button" id="reply-${id}">Reply</a>
 			</div>`;
 	if(comment.childrenIds.length != 0) {
 		listElem += `<ul id="childlist-${id}">`;

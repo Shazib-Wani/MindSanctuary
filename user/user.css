@@ -290,7 +290,7 @@ h6,
   font-weight: 600;
   line-height: 1.5;
   margin-bottom: .5rem;
-  color: #32325d;
+  color: #754ac5;
 }
 
 h1,
@@ -1831,7 +1831,7 @@ textarea[resize='horizontal'] {
   top: 0;
   left: 0;
   width: 100%;
-  height: 100%;
+  height: 15%;
   transition: all .15s ease;
 }
 
@@ -1902,7 +1902,7 @@ textarea[resize='horizontal'] {
   .navbar .dropdown-menu {
     margin: 0;
     pointer-events: none;
-    opacity: 0;
+    opacity: 1;
   }
 
   .navbar .dropdown-menu-arrow:before {

@@ -285,8 +285,10 @@
         </div>
 
         <div class="maybe-later">
-          <a href="next-page.html">Maybe Later</a>
+          <a href="Home.html">Maybe Later</a>
         </div>
+
+        
            
         <!-- repeat the above code for other service items -->
       </div>
@@ -295,6 +297,17 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 
   <script src="challenges.js"></script>
+
+  <script>
+    // Get the button element
+    var submitBtn = document.getElementById("submit-btn");
+  
+    // Add a click event listener to the button
+    submitBtn.addEventListener("click", function() {
+      // Redirect the user to the home.html page
+      window.location.href = "home.html";
+    });
+  </script>
 
   <footer>
     <div class="container">
